@@ -1,0 +1,40 @@
+# --- Ignore heavy data/model directories ---
+ZSCAPE_full/
+tf_exemplar/
+out_tfex/
+
+# --- Python cache & build files ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# --- Jupyter notebooks checkpoints ---
+.ipynb_checkpoints/
+
+# --- Virtual environments ---
+.venv/
+env/
+venv/
+.zscape_env/
+
+# --- Logs ---
+*.log
+
+# --- OS-specific clutter ---
+.DS_Store
+Thumbs.db
+
+# --- IDE/project files ---
+.vscode/
+.idea/
+
+# --- Common large scientific data formats ---
+*.h5
+*.h5ad
+*.mtx
+*.csv
+*.tsv
+*.gz
+*.pt

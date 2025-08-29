@@ -1,0 +1,10 @@
+- model.checkpoint_path=E:\tf_ZSCAPE_demo\tf_exemplar
+- model.inference_config.data_files.0=E:\tf_ZSCAPE_demo\ZSCAPE_full\per_slice\tfap2a_vs_control_shards\tfap2a_ctrl_shard001.h5ad
+- model.inference_config.batch_size=2
+- model.data_config.gene_col_name=ensembl_id
+- model.inference_config.output_path=E:\tf_ZSCAPE_demo\out_tfex
+- model.inference_config.output_filename=emb_tfap2a_ctrl_shard001.h5ad
+- model.inference_config.precision=32
+- model.model_type=transcriptformer
+- model.inference_config.emb_type=cell
+- model.data_config.remove_duplicate_genes=True

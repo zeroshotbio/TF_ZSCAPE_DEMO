@@ -1,0 +1,30 @@
+model:
+  checkpoint_path: E:\tf_ZSCAPE_demo\tf_exemplar
+  model_type: transcriptformer
+  inference_config:
+    _target_: transcriptformer.data.dataclasses.InferenceConfig
+    batch_size: 2
+    output_keys:
+    - embeddings
+    obs_keys:
+    - all
+    data_files:
+    - E:\tf_ZSCAPE_demo\ZSCAPE_full\per_slice\tfap2a_vs_control_shards\tfap2a_ctrl_shard002.h5ad
+    output_path: E:\tf_ZSCAPE_demo\out_tfex
+    output_filename: emb_tfap2a_ctrl_shard002.h5ad
+    load_checkpoint: null
+    pretrained_embedding: null
+    precision: 32
+    emb_type: cell
+  data_config:
+    _target_: transcriptformer.data.dataclasses.DataConfig
+    gene_col_name: ensembl_id
+    clip_counts: 30
+    filter_to_vocabs: true
+    filter_outliers: 0.0
+    normalize_to_scale: 0
+    sort_genes: false
+    randomize_genes: false
+    min_expressed_genes: 0
+    use_raw: auto
+    remove_duplicate_genes: true

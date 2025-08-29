@@ -1,0 +1,11 @@
+- model.checkpoint_path=E:\tf_ZSCAPE_demo\tf_exemplar
+- model.inference_config.data_files.0=E:\tf_ZSCAPE_demo\ZSCAPE_full\zscape_perturb_full_raw_counts_ens.h5ad
+- model.inference_config.batch_size=2
+- model.data_config.gene_col_name=ensembl_id
+- model.inference_config.output_path=E:\tf_ZSCAPE_demo\out_tfex
+- model.inference_config.output_filename=zscape_tfex_cell_embeddings.h5ad
+- model.inference_config.precision=32
+- model.model_type=transcriptformer
+- model.inference_config.emb_type=cell
+- model.data_config.remove_duplicate_genes=False
+- model.inference_config.load_checkpoint=E:\tf_ZSCAPE_demo\tf_exemplar\model_weights_cpu.pt
